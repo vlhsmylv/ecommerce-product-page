@@ -60,7 +60,7 @@ const MobileMenu = () => {
 
 const Navbar = () => {
   return (
-    <nav className="lg:border-b lg:border-b-text-grayish-blue lg:mx-24 mx-12 py-10 flex justify-between items-center">
+    <nav className="lg:border-b lg:border-b-text-grayish-blue lg:mx-24 mx-10 py-10 flex justify-between items-center">
       <section className="flex gap-6 items-center">
         <MobileMenu />
         <h1 className="text-very-dark-blue cursor-pointer text-4xl font-bold">
@@ -77,7 +77,7 @@ const Navbar = () => {
           ))}
         </ul>
       </section>
-      <section className="flex gap-8 items-center">
+      <section className="flex lg:gap-10 gap-6 items-center">
         <CartButton />
         <img
           src={profilePicture}
