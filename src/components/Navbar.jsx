@@ -27,7 +27,7 @@ const MobileMenu = () => {
   return (
     <>
       <button className="lg:hidden mt-2" onClick={toggleCollapse}>
-        <img width={22} height={22} src={hamburger} alt="Hamburger Menu Icon" />
+        <img className="shrink-0" width={22} height={22} src={hamburger} alt="Hamburger Menu Icon" />
       </button>
       {!collapse ? (
         <aside className="z-[999] lg:hidden flex h-screen flex-col gap-20 py-12 px-10 top-0 left-0 fixed bg-white max-w-[400px] w-full">
@@ -35,6 +35,7 @@ const MobileMenu = () => {
             <img
               src={close}
               width={22}
+              className="shrink-0"
               height={22}
               alt="Hamburger Close Icon"
             />
@@ -83,7 +84,7 @@ const Navbar = () => {
           alt="Profile picture"
           width={56}
           height={56}
-          className="cursor-pointer rounded-full ease-in-out duration-200 border-2 border-transparent hover:border-orange"
+          className="shrink-0 cursor-pointer rounded-full ease-in-out duration-200 border-2 border-transparent hover:border-orange"
         />
       </section>
     </nav>

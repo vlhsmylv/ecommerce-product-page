@@ -41,7 +41,7 @@ const Lightbox = () => {
         <img
           src={productImages[currentImage].src}
           className="rounded-xl w-full h-full max-h-[700px] lg:max-w-[600px] object-cover"
-          alt={"Dynamic"}
+          alt={productImages[currentImage].title}
         />
         <button
           id="mobile-controller-prev"
@@ -85,6 +85,7 @@ const Lightbox = () => {
             >
               <img
                 src={thumbnail.src}
+                alt=""
                 className={`${
                   thumbnail.id === currentImage ? "opacity-[.3]" : ""
                 } w-full h-full ease-in-out duration-100 rounded-[10px] hover:opacity-[.3]`}
@@ -155,6 +156,7 @@ const Carousel = () => {
           >
             <img
               src={thumbnail.src}
+              alt=""
               className={`${
                 thumbnail.id === currentImage ? "opacity-[.3]" : ""
               } w-full h-full ease-in-out duration-100 rounded-[10px] hover:opacity-[.3]`}
@@ -172,14 +174,14 @@ const Product = () => {
       <Carousel />
       <Lightbox />
       <div
-        className="lg:mx-0 mx-14 lg:mt-0 mt-10 flex flex-col gap-5"
+        className="lg:mx-0 mx-8 lg:mt-0 mt-10 flex flex-col gap-5"
         id="text-and-actions"
       >
         <div id="headers" className="flex flex-col gap-2">
           <h4 className="text-base font-semibold text-orange uppercase">
             sneaker company
           </h4>
-          <h2 className="max-w-[450px] lg:text-4xl text-5xl text-very-dark-blue font-semibold">
+          <h2 className="max-w-[450px] lg:text-4xl text-3xl text-very-dark-blue font-semibold">
             Fall Limited Edition Sneakers
           </h2>
         </div>
@@ -193,14 +195,14 @@ const Product = () => {
           className="flex lg:flex-col lg:justify-start justify-between lg:items-start items-center gap-1"
         >
           <div className="flex gap-3 items-center">
-            <span className="font-semibold text-very-dark-blue lg:text-3xl text-4xl">
+            <span className="font-semibold text-very-dark-blue lg:text-3xl text-2xl">
               $125.00
             </span>
-            <span className="bg-page-orange px-3 py-1 font-semibold lg:text-[14px] text-2xl text-orange rounded-md">
+            <span className="bg-page-orange px-3 py-1 font-semibold lg:text-[14px] lg:text-xl text-base text-orange rounded-md">
               50%
             </span>
           </div>
-          <span className="line-through text-dark-grayish-blue lg:text-[18px] text-xl">
+          <span className="line-through text-dark-grayish-blue lg:text-[18px] lg:text-xl text-lg">
             $250.00
           </span>
         </div>

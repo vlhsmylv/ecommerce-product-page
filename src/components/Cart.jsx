@@ -62,7 +62,7 @@ export const Cart = () => {
         <header className="flex justify-between items-center px-4 py-5 border-b border-b-grayish-blue">
           <h5 className="text-start text-xl font-semibold">Cart</h5>
           <button onClick={toggleShowCart}>
-            <img src={close} alt="Close Cart" width={16} height={16} />
+            <img className="shrink-0" src={close} alt="Close Cart" width={16} height={16} />
           </button>
         </header>
         <div
