@@ -77,7 +77,7 @@ const Navbar = () => {
           ))}
         </ul>
       </section>
-      <section className="flex gap-10 items-center">
+      <section className="flex gap-8 items-center">
         <CartButton />
         <img
           src={profilePicture}
