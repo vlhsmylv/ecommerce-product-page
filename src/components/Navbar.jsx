@@ -30,7 +30,7 @@ const MobileMenu = () => {
         <img className="shrink-0" width={22} height={22} src={hamburger} alt="Hamburger Menu Icon" />
       </button>
       {!collapse ? (
-        <aside className="z-[999] lg:hidden flex h-screen flex-col gap-20 py-12 px-10 top-0 left-0 fixed bg-white max-w-[400px] w-full">
+        <aside className="z-[999] lg:hidden flex h-screen flex-col gap-20 py-12 px-10 top-0 left-0 fixed bg-white max-w-[350px] w-full">
           <button onClick={toggleCollapse}>
             <img
               src={close}
