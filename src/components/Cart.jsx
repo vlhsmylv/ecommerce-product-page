@@ -8,7 +8,6 @@ import {
   checkout,
 } from "../assets";
 import { useCartStore } from "../zustand/cart";
-import { useLightboxStore } from "../zustand/lightbox";
 
 export const AddToCart = () => {
   const userCart = useCartStore((state) => state.cartSnap);
@@ -46,10 +45,6 @@ export const Cart = () => {
   const userCart = useCartStore((state) => state.cart);
   const removeCart = useCartStore((state) => state.removeCart);
 
-  const toggleLightboxActive = useLightboxStore(
-    (state) => state.toggleLightboxActive
-  );
-
   const showCart = useCartStore((state) => state.showCart);
   const toggleShowCart = useCartStore((state) => state.toggleShowCart);
 
@@ -78,12 +73,11 @@ export const Cart = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-5">
                     <img
-                      onClick={toggleLightboxActive}
                       src={productImageThumbnails[0].src}
                       alt="Fall Limited Edition Sneakers"
                       width={64}
                       height={64}
-                      className="rounded-xl hover:opacity-[.7] ease-in-out duration-200 cursor-pointer"
+                      className="rounded-xl" 
                     />
                     <div className="flex flex-col">
                       <h6 className="font-semibold text-very-dark-blue text-2xl">
