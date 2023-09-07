@@ -60,7 +60,7 @@ const MobileMenu = () => {
 
 const Navbar = () => {
   return (
-    <nav className="lg:border-b lg:border-b-text-grayish-blue mx-24 py-10 flex justify-between items-center">
+    <nav className="lg:border-b lg:border-b-text-grayish-blue lg:mx-24 mx-18 py-10 flex justify-between items-center">
       <section className="flex gap-6 items-center">
         <MobileMenu />
         <h1 className="text-very-dark-blue cursor-pointer text-4xl font-bold">
