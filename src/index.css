@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --orange: #ff7d1a;
+  --page-orange: #ffede0;
+
+  --very-dark-blue: #1d2025;
+  --dark-grayish-blue: #68707d;
+  --grayish-blue: #b6bcc8;
+  --light-grayish-blue: #f7f8fd;
+
+  --font-size: 16px;
+
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+}
+
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+
+.hover-filter-orange:hover {
+  filter: invert(62%) sepia(29%) saturate(6064%) hue-rotate(346deg)
+    brightness(104%) contrast(106%);
+}
+
+.shadow-orange {
+  box-shadow: 0px 0px 85px 10px rgba(255, 125, 26, 0.29);
+  -webkit-box-shadow: 0px 0px 85px 10px rgba(255, 125, 26, 0.29);
+  -moz-box-shadow: 0px 0px 85px 10px rgba(255, 125, 26, 0.29);
+}
+
+.shadow-dark {
+  box-shadow: 0px 0px 170px -15px rgba(0, 0, 0, 0.84);
+  -webkit-box-shadow: 0px 0px 170px -15px rgba(0, 0, 0, 0.84);
+  -moz-box-shadow: 0px 0px 170px -15px rgba(0, 0, 0, 0.84);
+}
